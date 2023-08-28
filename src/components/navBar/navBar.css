@@ -1,0 +1,22 @@
+.navBar{
+    background-color: var(--background-clr);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nav_welcome{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.nav_logo{
+    height: 125px;
+}
+
