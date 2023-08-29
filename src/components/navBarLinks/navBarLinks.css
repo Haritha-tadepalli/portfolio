@@ -1,0 +1,32 @@
+.navBarLink{
+    display: flex;
+    margin-right: 3.5rem;
+}
+
+.nav_list {
+    display: flex;
+    text-align: center;
+    flex: 1;
+}
+
+.nav_list__links{
+    margin-right: 1.5rem;
+}
+
+.nav_list__links ::after{
+    content: '';
+    width: 0;
+    display: block;
+    height: 3px;
+    transition: all 0.5s ease;
+    background: transparent;
+}
+
+.nav_list__links:hover ::after{
+    width: 100%;
+    background: var(--hover-text-clr);
+}
+
+.nav_icons{
+    display: none;
+}

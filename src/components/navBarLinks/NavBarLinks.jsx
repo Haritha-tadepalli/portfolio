@@ -21,7 +21,7 @@ const data = [
   {
     label: "Contact",
     to: "/contact",
-  },
+  }
 ];
 
 const NavBarLinks = () => {
@@ -36,7 +36,7 @@ const NavBarLinks = () => {
     <div className="navBarLink">
       <ul className="nav_list">
         {data.map((item, key) => (
-          <li key = {key} className="nav_list_links">
+          <li key = {key} className="nav_list__links">
             <Link to={item.to}>{item.label}</Link>
           </li>
         ))}
