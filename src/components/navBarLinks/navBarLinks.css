@@ -27,6 +27,36 @@
     background: var(--hover-text-clr);
 }
 
-.nav_icons{
-    display: none;
+/* ============= Media Queries (Small Devices) ======================== */
+@media screen and (max-width: 700px) {
+    .navBarLink {
+        display: flex;
+        margin-top: 0;
+        justify-content: space-between;
+        position: relative;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav_list__links {
+        margin: 0.75rem 0;
+        text-align: left;
+    }
+    
+    .active {
+        left: -37%;
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
 }

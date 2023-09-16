@@ -1,0 +1,38 @@
+.contactBar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    background-color: var(--button-clr);
+    z-index: 1000;
+    border-radius: 7px;
+  }
+  
+  .contactBar a {
+    margin: 2px 0;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .contactBar a:hover {
+    color: black; 
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .contactBar {
+        padding: 2px;
+    }
+    /* AiOutlineLinkedin, AiOutlineGithub, AiOutlineInstagram{
+        height: 0.75rem;
+        width: 0.75rem;
+    } */
+    .contactBar a {
+        margin: 2px 0;
+    }
+  }

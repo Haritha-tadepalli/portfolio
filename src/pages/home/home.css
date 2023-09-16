@@ -1,0 +1,116 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.home__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home__verticalLine{
+    height: 100%;
+    width: 5px;
+    background-color: var(--button-clr);
+    margin-right: 10px;
+}
+
+.home__verticalLine:hover{
+    background-color: beige;
+}
+
+.helloText{
+    font-weight: 300;
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.introText__myName{
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 10px;
+    font-size: 1.75rem;
+}
+
+.introText__name{
+    color: var(--button-clr);
+}
+
+.introText__line2{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.introText__frontEnd{
+    color: var(--button-clr);
+}
+
+.home__mainText h1{
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2s steps(30, end);
+}
+
+.home__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/* ============= Media Queries (Small Devices) ======================== */
+@media screen and (max-width: 550px){
+    .helloText{
+        font-size: 1.05rem;
+    }
+    .introText__myName, .introText__line2{
+        font-size: 1.25rem;
+    } 
+    .home__mainText h1{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 700px){
+    .home__mainText h1{
+        font-size: 1.7rem;
+        line-height: 3.5rem;
+    }
+    .helloText{
+        font-size: 1.25rem;
+    } 
+    
+    .introText__myName, .introText__line2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@keyframes typingEffectAnimation{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

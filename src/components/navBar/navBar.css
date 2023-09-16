@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
+    position: sticky;
 }
+
 
 .nav_welcome{
     display: flex;
@@ -21,4 +23,36 @@
     height: 120px;
 }
 
+.nav_icons{
+    display: none;
+}
+
+/* ============= Media Queries (Small Devices) ======================== */
+@media screen and (max-width: 700px) {
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+    }
+
+    
+    .nav_icons {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        padding: 0 25px;
+    }
+
+    .nav_logo{
+        height: 80px;
+    }
+
+    .nav_welcome {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+}
 

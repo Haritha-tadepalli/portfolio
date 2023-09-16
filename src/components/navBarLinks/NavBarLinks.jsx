@@ -1,8 +1,5 @@
 import React from "react";
-import {useState} from 'react';
 import "./navBarLinks.css";
-import {FaBars} from 'react-icons/fa';
-import {HiX} from 'react-icons/hi';
 import {Link} from 'react-router-dom'
 
 const data = [
@@ -24,28 +21,18 @@ const data = [
   }
 ];
 
-const NavBarLinks = () => {
-
-    const [toggleIcon, setToggleIcon] = useState(false);
-  
-    const handleToggleIcon = () => {
-        setToggleIcon(!toggleIcon);
-    };
-
+const NavBarLinks = (toggleFlag) => {
   return (
+    // <div className={toggleFlag ? "active" :"navBarLink"}>
     <div className="navBarLink">
       <ul className="nav_list">
         {data.map((item, key) => (
           <li key = {key} className="nav_list__links">
             <Link to={item.to}>{item.label}</Link>
+            {console.log(toggleFlag)}
           </li>
         ))}
       </ul>
-      <div className="nav_icons" onClick={handleToggleIcon}>
-            {
-                toggleIcon ? <HiX size = {30}/> : <FaBars size = {30}/>
-            }
-      </div>
     </div>
   );
 };

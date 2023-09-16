@@ -2,3 +2,11 @@ body{
     background-color: #1A1527;
     color: white;
 }
+
+.App{
+    height: 100%;
+}
+
+.App__main-page-content{
+    height: calc(100% - 80px);
+}
