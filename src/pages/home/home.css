@@ -45,7 +45,7 @@
     font-weight: 300;
     font-size: 2rem;
     margin-right: 10px;
-    font-style: italic;
+    font-style: ita lic;
 }
 
 .introText__frontEnd{
@@ -73,6 +73,23 @@
     margin-top: 25px;
 }
 
+.button_letsTalk{
+    cursor: pointer;
+    padding: 6px 70px;
+    font-size: 1rem;
+    background-color: var(--button-clr);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0px 20px;
+    color: black;
+}
+
+.button_letsTalk:hover{
+    background-color: var(--button-hover-clr);
+    font-style: italic;
+    color: black;
+}
+
 
 /* ============= Media Queries (Small Devices) ======================== */
 @media screen and (max-width: 550px){
@@ -87,11 +104,14 @@
         line-height: 3rem;
     }
     
+    .home{
+        margin-top: 50%;
+    }
 
 }
 
 
-@media screen and (min-width: 551px) and (max-width: 700px){
+@media screen and (max-width: 700px){
     .home__mainText h1{
         font-size: 1.7rem;
         line-height: 3.5rem;
@@ -103,6 +123,24 @@
     .introText__myName, .introText__line2 {
         font-size: 1.5rem;
     }
+
+    .home{
+        margin-top: 30%;
+    }
+
+    .button_letsTalk{
+        padding: 7px 40px;
+        font-size: 0.9rem;
+        margin: 0px 10px;
+    }
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1024px){
+    .home{
+        margin-top: 30%;
+    }
+
 }
 
 

@@ -1,17 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./home.css";
 import {useState, useEffect} from 'react';
-import myCV from "../../assets/myCV.pdf";
+import myCV from "../../assets/HarithaTadepalliCV.pdf";
 import ContactBar from '../../components/contactBar/ContactBar.jsx';
 
 const Home = () => {
-
-    const navigate = useNavigate();
-
-    const navigateToContact = () => {
-        navigate('/contact');
-    };
 
     const [showButton, setShowButton] = useState(false);
 
@@ -19,19 +12,8 @@ const Home = () => {
         const timer = setTimeout(() => {
             setShowButton(true);
             }, 2000);
-        
-            // Clear the timer when the component unmounts (optional)
             return () => clearTimeout(timer);
     }, []);
-
-    const downloadCV = () => {
-        const link = document.createElement('a');
-        link.href = {myCV};
-        link.target = '_blank';
-        link.download = 'myCV.pdf';
-    
-        link.click();
-      };
 
 
   return (
@@ -51,9 +33,12 @@ const Home = () => {
             </h1>
           </div>
           <div className="home__buttons">
-            {showButton && <button className="button__downloadCV" onClick={downloadCV}>Download CV</button>}
-            {/* {showButton && <a className="button_downloadCV" href="/src/assets/HarithaTResumeSDE.pdf" download="HarithaTResumeSDE.pdf">Download CV</a>} */}
-            {showButton && <button className="button_letsTalk" onClick={navigateToContact}>Let's Talk</button> }
+            {showButton && 
+                <a href={myCV} download>
+                  <button className="button__downloadCV" >Download CV</button>
+                </a>
+              }
+            {showButton && <a className="button_letsTalk" href="#contact">Let's Talk</a> }
           </div>
         </div>
         <div className="home__contactIcons">

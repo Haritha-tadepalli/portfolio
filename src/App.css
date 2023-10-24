@@ -6,7 +6,3 @@ body{
 .App{
     height: 100%;
 }
-
-.App__main-page-content{
-    height: calc(100% - 80px);
-}

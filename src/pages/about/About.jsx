@@ -3,15 +3,9 @@ import "./about.css";
 import ContactBar from "../../components/contactBar/ContactBar";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useNavigate } from "react-router-dom";
+import Skills from "../../components/skills/Skills";
 
 const About = () => {
-  
-    const navigate = useNavigate();
-
-  const navigateToContact = () => {
-    navigate("/contact");
-  };
 
   const responsive = {
     desktop: {
@@ -29,7 +23,7 @@ const About = () => {
   };
 
   return (
-    <section className="aboutMain">
+    <section id="about" className="aboutMain">
       <div className="about__wrapper">
         <h1 className="about__heading">About Me!</h1>
         <div className="about__containers">
@@ -40,14 +34,11 @@ const About = () => {
             showDots={true}
             responsive={responsive}
             infinite={true}
-            // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-            autoPlaySpeed={1000}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
-            // deviceType={this.props.deviceType}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
           >
@@ -56,15 +47,18 @@ const About = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                 reprehenderit cumque cum distinctio illo soluta enim voluptatem
                 qui, voluptatibus temporibus expedita illum odit, consectetur
-                dicta pariatur? Id quidem necessitatibus temporibus.
+                dicta pariatur? Id quidem necessitatibus temporibus. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Adipisci facere
               </p>
             </div>
-            <div>Item 2</div>
+            <div className="about__item2">
+              <Skills />
+            </div>
           </Carousel>
         </div>
-        <button className="about__letstalk" onClick={navigateToContact}>
+        <a className="about__letstalk" href="#contact">
           Let's Talk
-        </button>
+        </a>
       </div>
       <ContactBar />
     </section>

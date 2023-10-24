@@ -1,6 +1,6 @@
 .aboutMain{
     height: 100%;
-    margin-top: 2rem;
+    margin-top: 22rem;
 }
 
 .about__wrapper{
@@ -8,11 +8,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    transform: translateX(50%);
+    width: 53%;
+    /* transform: translateX(40%); */
+    transform: translate(45%, -9%);
     height: 100%;
 }
 
+.about__heading{
+    margin-bottom: 20px;
+    transform: translateY(-20%);
+}
 
 .about__containers{
     height: 27rem;
@@ -20,6 +25,7 @@
     border: 5px solid var(--box-clr);
     border-radius: 7px;
     box-shadow: 0px 0px 10px 5px grey;
+    margin-bottom: 5%;
 }
 
 .about__carousel{
@@ -27,16 +33,49 @@
 }
 
 .about__letstalk{
-    margin-top: 20px;
+    cursor: pointer;
+    padding: 6px 70px;
+    font-size: 1rem;
+    background-color: var(--button-clr);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0px 20px;
+    color: black;
+}
+
+.about__letstalk:hover{
+  background-color: var(--button-hover-clr);
+    font-style: italic;
+    color: black;
 }
 
 .about__item1{
-    padding: 25px;
+    padding: 15%;
     text-align: center;
     font-style: italic;
 }
 
+.react-multiple-carousel__arrow{
+    background: var(--box-clr) !important;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 10px 5px grey;
+}
 
+.react-multiple-carousel__arrow--left{
+    left:calc(-2% + 1px) !important
+}
+.react-multiple-carousel__arrow--right{
+    right:calc(-2% + 1px) !important
+}
+
+.rtl.react-multiple-carousel__arrow--right{
+    right:auto;
+    left:calc(-2% + 1px)
+}
+.rtl.react-multiple-carousel__arrow--left{
+    left:auto;
+    right:calc(-2% + 1px)
+}
 
 @media screen and (max-width: 700px){
     .about__letstalk{
@@ -49,3 +88,69 @@
     
 }
 
+
+
+@media screen and (max-width: 1024px) {
+  .aboutMain{
+    margin-top: 10rem;
+  }
+    .about__wrapper {
+      width: 80%; 
+      transform: translateX(15%); 
+    }
+  
+    .about__heading {
+      transform: translateY(0); 
+    }
+  
+    .about__containers {
+      width: 90%; 
+      height: 25.5rem;
+    }
+    
+    .about__item1 {
+      padding: 15%; 
+    }
+  
+    .about__letstalk {
+      margin-top: 7%;
+    }
+  
+
+    .react-multiple-carousel__arrow {
+      display: none !important;
+    }
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .aboutMain{
+      margin-top: 10rem;
+    }
+    .about__wrapper {
+      width: 80%; 
+      height: 22rem;
+    }
+  
+    .about__heading {
+      transform: translateY(0); 
+    }
+  
+    .about__containers {
+      width: 100%; 
+      border: 2px solid var(--box-clr); 
+    }
+    
+    .about__item1 {
+      padding: 11%; 
+      margin-top: 10%;
+    }
+  
+    .about__letstalk {
+      display: none; 
+    }
+
+    .react-multiple-carousel__arrow {
+      display: none !important;
+    }
+  }

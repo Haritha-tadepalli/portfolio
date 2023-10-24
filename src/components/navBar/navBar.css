@@ -1,11 +1,15 @@
 .navBar{
     background-color: var(--background-clr);
+    opacity: 1;
     height: 80px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 
@@ -15,21 +19,55 @@
     width: 100%;
     height: inherit;
     padding: 0px 20px;
-    cursor: pointer;
     flex: 1;
+    z-index: 100;
 }
 
 .nav_logo{
     height: 120px;
+    cursor: pointer;
 }
 
 .nav_icons{
     display: none;
 }
 
+.navBarLink{
+    display: flex;
+    margin-right: 3.5rem;
+}
+
+.nav_list {
+    display: flex;
+    text-align: center;
+    flex: 1;
+}
+
+.nav_list__links{
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.nav_list__links ::after{
+    content: '';
+    width: 0;
+    display: block;
+    height: 3px;
+    transition: all 0.5s ease;
+    background: transparent;
+}
+
+.nav_list__links:hover ::after{
+    width: 100%;
+    background: var(--hover-text-clr);
+}
+
+
+
 /* ============= Media Queries (Small Devices) ======================== */
 @media screen and (max-width: 700px) {
     .navBar {
+        z-index: 100;
         display: flex;
         flex-direction: column;
         justify-content: left;
@@ -39,7 +77,6 @@
     
     .nav_icons {
         display: block;
-        cursor: pointer;
         font-size: 25px;
         padding: 0 25px;
     }
@@ -53,6 +90,38 @@
         justify-content: space-between;
         padding: 0;
     }
-
+    .navBarLink {
+        display: flex;
+        top: 80px;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: -110%;
+        opacity: 1;
+        transition: all 1s ease;
+        flex: 1;
+        background: var(--background-clr);
+    }
+    
+    .active {
+        left: 0px;
+        top: 80px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        transition: all 0.5s ease;
+        /* background: #271f3a; */
+        background: var(--background-clr);
+        width: -webkit-fill-available;
+    }
+    .nav_list__links {
+        margin: 0.75rem 0;
+    }
+    
 }
 
+
+  

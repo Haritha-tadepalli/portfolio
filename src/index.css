@@ -65,7 +65,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 a {
@@ -89,7 +89,7 @@ button{
     font-size: 1rem;
     background-color: var(--button-clr);
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0px 20px;
 }
 
@@ -122,8 +122,9 @@ button:hover{
         margin-top: 2rem;
     }
     button {
-        padding: 10px 40px; /* Adjust the padding for smaller screens */
+        padding: 10px 30px; /* Adjust the padding for smaller screens */
         font-size: 0.9rem; /* Adjust the font size for smaller screens */
         margin: 0px 10px; /* Adjust the margin for smaller screens */
+        font-weight: 400;
     }
 }
