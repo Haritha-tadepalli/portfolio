@@ -24,12 +24,12 @@ const data = [
   {
     label: 'Projects',
     to: 'projects',
-    offset: -150,
+    offset: -100,
   },
   {
     label: 'Contact',
     to: 'contact',
-    offset: -150,
+    offset: -100,
   },
 ];
 
@@ -121,7 +121,7 @@ const NavBar = () => {
       </ul>
     </div>
     
-    {/* {renderParticlesJsInHomePage && <Particles id="particles" options={particles} init={particlesInit} />} */}
+    {renderParticlesJsInHomePage && <Particles id="particles" options={particles} init={particlesInit} />}
     </section>
   );
 };

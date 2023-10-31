@@ -1,0 +1,73 @@
+.projects {
+    text-align: center;
+    padding: 20px;
+  }
+
+.projects h1{
+    margin-bottom: 20px;
+}
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project {
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .project:hover{
+    box-shadow: 0px 0px 10px 5px grey;
+  }
+  
+  
+  .project-image img {
+    max-width: 100%;
+    max-height: 100px;
+  }
+  
+  .project-details {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .project-details h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    margin-bottom: 10px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: var(--button-clr);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  @media screen and (max-width: 700px){
+    .project{
+        width: 300px;
+    }
+    .projects{
+        margin-top: 10rem;
+    }
+  }
