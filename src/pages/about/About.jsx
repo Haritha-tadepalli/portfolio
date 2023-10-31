@@ -6,7 +6,6 @@ import "react-multi-carousel/lib/styles.css";
 import Skills from "../../components/skills/Skills";
 
 const About = () => {
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -44,11 +43,18 @@ const About = () => {
           >
             <div className="about__item1">
               <p className="about__me">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                reprehenderit cumque cum distinctio illo soluta enim voluptatem
-                qui, voluptatibus temporibus expedita illum odit, consectetur
-                dicta pariatur? Id quidem necessitatibus temporibus. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Adipisci facere
+                Hi, I am Haritha. I am currently working as a Systems Engineer
+                in Tata Consultancy Services. I have good hold on DSA and love
+                to code during my free time. I am Frontend Developer with
+                extensive knowledge on ReactJS, JavaScript, HTML, CSS, Git,
+                MongoDB, MySQL, PostgreSQL and AWS - S3, DynamoDB, RDS.
+                I have completed my Bachelors
+                on Electronics and Communication Engineering at Gayatri Vidya
+                Parishad College of Engineering, Vizag. During my Bachelors, I
+                was a part of National Service Scheme which brought me more
+                closer to serving people. We as a Unit adopted a near by village
+                and made major developments there. I won the Best Volunteer
+                Award.
               </p>
             </div>
             <div className="about__item2">
