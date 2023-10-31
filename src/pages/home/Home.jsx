@@ -29,7 +29,7 @@ const Home = () => {
               <span className="introText__name">Haritha Tadepalli</span>
               <br />
               <span className="introText__line2">I am a</span>
-              <span className="introText__frontEnd">FrontEnd Developer</span>
+              <span className="introText__frontEnd">Frontend Developer</span>
             </h1>
           </div>
           <div className="home__buttons">

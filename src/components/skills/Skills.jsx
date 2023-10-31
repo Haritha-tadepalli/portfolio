@@ -3,10 +3,10 @@ import "./skills.css";
 
 const Skills = () => {
   const words = [
-    'C', 'C++', 'Java', 'Python', 'DSA',
-    'RAML', 'HTML', 'CSS', 'JavaScript',
-    'ReactJS', 'Git', 'VLSI', 'MuleSoft',
-    'SOA', 'MFT', 'GIT'
+    'ReactJS', 'JavaScript', 'HTML', 'CSS', 
+    'DSA', 'C++', 'Java', 'Python', 
+    'MuleSoft', 'SOA', 'MFT', 'GIT',
+    'Jenkins','RAML','C', 'VLSI', 
   ];
 
   return (

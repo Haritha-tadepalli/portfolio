@@ -91,12 +91,14 @@ button{
     border-radius: 5px;
     font-weight: bold;
     margin: 0px 20px;
+    color: white;
 }
 
 button:hover{
     background-color: var(--button-hover-clr);
     /* font-weight: 600; */
     font-style: italic;
+    color: black;
 }
 
 

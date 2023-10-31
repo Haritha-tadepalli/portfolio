@@ -45,10 +45,10 @@ const About = () => {
               <p className="about__me">
                 Hi, I am Haritha. I am currently working as a Systems Engineer
                 in Tata Consultancy Services. I have good hold on DSA and love
-                to code during my free time. I am Frontend Developer with
+                to code during my free time. I am a Frontend Developer with
                 extensive knowledge on ReactJS, JavaScript, HTML, CSS, Git,
                 MongoDB, MySQL, PostgreSQL and AWS - S3, DynamoDB, RDS.
-                I have completed my Bachelors
+                <br/><br/>I have completed my Bachelors
                 on Electronics and Communication Engineering at Gayatri Vidya
                 Parishad College of Engineering, Vizag. During my Bachelors, I
                 was a part of National Service Scheme which brought me more
