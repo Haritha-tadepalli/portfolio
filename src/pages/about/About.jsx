@@ -42,7 +42,32 @@ const About = () => {
             itemClass="carousel-item-padding-40-px"
           >
             <div className="about__item1">
-              <p className="about__me">
+              <ul className="about_me">
+                <li className="about_me_rows">Hi, I am Haritha. I am currently working as a Systems Engineer
+                in Tata Consultancy Services. I have good hold on DSA and love
+                to code during my free time.</li>
+                <li className="about_me_rows">
+                I am a Frontend Developer with
+                extensive knowledge on ReactJS, JavaScript, HTML, CSS, Git,
+                MongoDB, MySQL, PostgreSQL and AWS - S3, DynamoDB, RDS.
+                </li>
+                <li className="about_me_rows">
+                I have completed my Bachelors
+                on Electronics and Communication Engineering at Gayatri Vidya
+                Parishad College of Engineering, Vizag.
+                </li>
+                <li className="about_me_rows">
+                During my Bachelors, I
+                was a part of National Service Scheme which brought me more
+                closer to serving people. We as a Unit adopted a near by village
+                and made major developments there. I won the Best Volunteer
+                </li>
+                <li className="about_me_rows">
+                We as a Unit adopted a near by village
+                and made major developments there. I won the Best Volunteer
+                </li>
+              </ul>
+              {/* <p className="about__me">
                 Hi, I am Haritha. I am currently working as a Systems Engineer
                 in Tata Consultancy Services. I have good hold on DSA and love
                 to code during my free time. I am a Frontend Developer with
@@ -55,7 +80,7 @@ const About = () => {
                 closer to serving people. We as a Unit adopted a near by village
                 and made major developments there. I won the Best Volunteer
                 Award.
-              </p>
+              </p> */}
             </div>
             <div className="about__item2">
               <Skills />
