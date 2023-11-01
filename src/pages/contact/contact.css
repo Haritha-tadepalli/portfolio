@@ -152,4 +152,7 @@
         margin: 2rem 13%;
         position: fixed;
     }
+    .contact__form{
+        width: 125%;
+    }
 }
