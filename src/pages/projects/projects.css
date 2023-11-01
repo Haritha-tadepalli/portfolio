@@ -55,13 +55,14 @@
   
   .skills-list li {
     display: inline-block;
-    margin-right: 10px;
-    background-color: var(--button-clr);
+    margin-right: 7px;
+    background-color: #2d2742;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     font-size: 0.8rem;
     margin-bottom: 10px;
+    border: 3px solid #2d2742;
   }
   
   @media screen and (max-width: 700px){

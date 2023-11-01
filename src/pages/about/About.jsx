@@ -59,8 +59,7 @@ const About = () => {
                 <li className="about_me_rows">
                 During my Bachelors, I
                 was a part of National Service Scheme which brought me more
-                closer to serving people. We as a Unit adopted a near by village
-                and made major developments there. I won the Best Volunteer
+                closer to serving people.
                 </li>
                 <li className="about_me_rows">
                 We as a Unit adopted a near by village
