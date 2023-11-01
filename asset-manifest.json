@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e8b8af87.css",
+    "main.css": "/portfolio/static/css/main.2d2618b1.css",
     "main.js": "/portfolio/static/js/main.77875de5.js",
     "static/media/HarithaTadepalliCV.pdf": "/portfolio/static/media/HarithaTadepalliCV.99174afd9f74fb86063b.pdf",
     "static/media/ht_logo.png": "/portfolio/static/media/ht_logo.4f9f1481c3706b2b0c25.png",
@@ -8,11 +8,11 @@
     "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio/index.html",
-    "main.e8b8af87.css.map": "/portfolio/static/css/main.e8b8af87.css.map",
+    "main.2d2618b1.css.map": "/portfolio/static/css/main.2d2618b1.css.map",
     "main.77875de5.js.map": "/portfolio/static/js/main.77875de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8b8af87.css",
+    "static/css/main.2d2618b1.css",
     "static/js/main.77875de5.js"
   ]
 }
