@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr); 
     gap: 15px; 
     padding: 40px; 
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   
   /* Box styling */
@@ -27,7 +27,7 @@
   @media screen and (max-width: 700px) {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
-        margin-top: 23%;
+        margin-top: 5%;
         gap: 25px 9px;
         padding: 2%;
     }
